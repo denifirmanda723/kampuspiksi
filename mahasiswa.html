@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #74b9ff, #6c5ce7);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .student-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      color: #2d3436;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .student-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+    .student-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #6c5ce7;
+    }
+    .student-info {
+      margin-left: 20px;
+    }
+    .student-info h5 {
+      margin-bottom: 10px;
+      color: #2d3436;
+    }
+    .prestasi-list {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .prestasi-list li {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+    .btn-back {
+      background: #2d3436;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-back:hover {
+      background: #d63031;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Data Mahasiswa dan Prestasi</h1>
+    
+    <!-- Mahasiswa 1 -->
+    <div class="student-card d-flex align-items-center">
+      <img src="https://via.placeholder.com/100" alt="Foto Mahasiswa 1" class="student-image">
+      <div class="student-info">
+        <h5>Nurul Aini</h5>
+        <p><strong>NIM:</strong> 202210001</p>
+        <p><strong>Email:</strong> nurul.aini@example.com</p>
+        <p><strong>Jurusan:</strong> Teknik Informatika</p>
+        <ul class="prestasi-list">
+          <li>Juara 1 Lomba Pemrograman Web Nasional</li>
+          <li>Perwakilan Kampus pada Hackathon 2023</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mahasiswa 2 -->
+    <div class="student-card d-flex align-items-center">
+      <img src="https://via.placeholder.com/100" alt="Foto Mahasiswa 2" class="student-image">
+      <div class="student-info">
+        <h5>Ahmad Fauzi</h5>
+        <p><strong>NIM:</strong> 202210002</p>
+        <p><strong>Email:</strong> ahmad.fauzi@example.com</p>
+        <p><strong>Jurusan:</strong> Sistem Informasi</p>
+        <ul class="prestasi-list">
+          <li>Juara 2 Debat Teknologi Nasional</li>
+          <li>Ketua Panitia Seminar Data Science 2023</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mahasiswa 3 -->
+    <div class="student-card d-flex align-items-center">
+      <img src="https://via.placeholder.com/100" alt="Foto Mahasiswa 3" class="student-image">
+      <div class="student-info">
+        <h5>Siti Maulida</h5>
+        <p><strong>NIM:</strong> 202210003</p>
+        <p><strong>Email:</strong> siti.maulida@example.com</p>
+        <p><strong>Jurusan:</strong> Rekayasa Perangkat Lunak</p>
+        <ul class="prestasi-list">
+          <li>Juara 3 UI/UX Design Competition</li>
+          <li>Publikasi Jurnal Internasional</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tombol Kembali -->
+    <div class="text-center mt-4">
+      <a href="#" class="btn-back" id="backButton">Kembali ke Dashboard</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Event Listener untuk tombol kembali
+    document.getElementById('backButton').addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('Kembali ke Dashboard!');
+ window.location.href = "Qdashbord.html";
+    });
+  </script>
+</body>
+</html>
